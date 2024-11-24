@@ -1,0 +1,167 @@
+/* تنسيقات عامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    /* إعداد صورة الخلفية */
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    background: url('pexels-markusspiske-1089438.jpg') no-repeat center center fixed; /* اسم الصورة */
+    background-size: cover; /* لجعل الصورة تغطي الشاشة */
+
+
+/* لتوضيح النصوص فوق الخلفية */
+.hero, #about, footer {
+    background: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+}
+
+/* رأس الصفحة */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #45a049;
+}
+
+/* قسم "من أنا" */
+#about {
+    padding: 100px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#about .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* قسم "مشاريعي" */
+#projects {
+    padding: 50px;
+    background-color: #0d744c;
+    text-align: center;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* تأثيرات الصورة عند التمرير */
+.project-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(185, 38, 38, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+/* تأثير النص عند التمرير */
+.project-item p {
+    font-size: 2.1rem;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.project-item:hover p {
+    opacity: 1;
+}
+
+/* تأثير الجزيئات */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* التذييل */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+/* تأثير التوهج للمؤشر */
+@keyframes pulse {
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+/* إعداد الخلفية المتحركة */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* تأكد من أن المحتوى فوق الخلفية */
+}
